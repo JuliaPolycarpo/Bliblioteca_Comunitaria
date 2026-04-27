@@ -68,6 +68,11 @@ function exibirLivros(livros){
             botao.textContent = "Reservado!";
             botao.disabled = true;
 
+            status.textContent = "Indisponível";
+            status.classList.remove("disponivel");
+            
+            status.classList.add("indisponivel");
+
             console.log(`Livro reservado: ${livro.titulo}`);
         });
 
